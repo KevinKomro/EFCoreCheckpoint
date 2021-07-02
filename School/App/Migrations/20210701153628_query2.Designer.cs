@@ -8,8 +8,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace App.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20210630200524_Initial")]
-    partial class Initial
+    [Migration("20210701153628_query2")]
+    partial class query2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -49,13 +49,20 @@ namespace App.Migrations
                         new
                         {
                             Id = 2,
+                            CourseName = "Comp Sci 1240",
+                            Grade = 0.94999999999999996,
+                            StudentId = 1
+                        },
+                        new
+                        {
+                            Id = 3,
                             CourseName = "Math 303",
                             Grade = 0.65000000000000002,
                             StudentId = 2
                         },
                         new
                         {
-                            Id = 3,
+                            Id = 4,
                             CourseName = "History 102",
                             Grade = 0.98999999999999999,
                             StudentId = 3

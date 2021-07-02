@@ -2,11 +2,11 @@
 
 namespace App.Migrations
 {
-    public partial class Initial : Migration
+    public partial class query2 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
+/*             migrationBuilder.CreateTable(
                 name: "Students",
                 columns: table => new
                 {
@@ -66,26 +66,31 @@ namespace App.Migrations
             migrationBuilder.InsertData(
                 table: "Grades",
                 columns: new[] { "Id", "CourseName", "Grade", "StudentId" },
-                values: new object[] { 2, "Math 303", 0.65000000000000002, 2 });
+                values: new object[] { 2, "Comp Sci 1240", 0.94999999999999996, 1 });
 
             migrationBuilder.InsertData(
                 table: "Grades",
                 columns: new[] { "Id", "CourseName", "Grade", "StudentId" },
-                values: new object[] { 3, "History 102", 0.98999999999999999, 3 });
+                values: new object[] { 3, "Math 303", 0.65000000000000002, 2 });
+
+            migrationBuilder.InsertData(
+                table: "Grades",
+                columns: new[] { "Id", "CourseName", "Grade", "StudentId" },
+                values: new object[] { 4, "History 102", 0.98999999999999999, 3 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Grades_StudentId",
                 table: "Grades",
-                column: "StudentId");
+                column: "StudentId"); */
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
+/*             migrationBuilder.DropTable(
                 name: "Grades");
 
             migrationBuilder.DropTable(
-                name: "Students");
+                name: "Students"); */
         }
     }
 }
